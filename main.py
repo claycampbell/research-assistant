@@ -8,8 +8,7 @@ import sys
 import os
 model = "gpt-4"
 
-os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
-
+api_key = os.getenv("OPENAI_API_KEY")
 def get_pubmed_papers(query, max_results=10):
     """Fetch papers from PubMed."""
     pubmed = PubMed(tool="MedResearchAid", email="your_email@example.com")
