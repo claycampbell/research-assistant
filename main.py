@@ -5,9 +5,10 @@ import re
 import streamlit as st
 import io
 import sys
+import os
 model = "gpt-4"
 
-openai.api_key = "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"
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
 def get_pubmed_papers(query, max_results=10):
     """Fetch papers from PubMed."""
