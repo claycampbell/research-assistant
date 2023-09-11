@@ -3,3 +3,5 @@ PyPDF2==3.0.1
 arxiv==1.4.7
 pymed  
 streamlit
+sentence_transformers
+chromadb
