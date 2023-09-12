@@ -6,3 +6,4 @@ streamlit
 sentence_transformers
 chromadb
 bio
+pysqlite3-binary
